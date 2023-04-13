@@ -21,4 +21,14 @@ public:
 		price = prc;
 		capacity = cpct;
 	}
+	string convert() {
+		string msg = "";
+		msg += brand;
+		msg += "," + number;
+		msg += ","+  to_string(price);
+		msg +=  ","+ to_string(capacity);
+		
+		return msg;
+	}
+
 };
